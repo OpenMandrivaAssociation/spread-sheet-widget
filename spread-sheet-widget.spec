@@ -5,7 +5,7 @@
 Summary:	A library for Gtk+ which provides a spread sheet widget
 Name:		spread-sheet-widget
 Version:	0.8
-Release:	1
+Release:	2
 License:	GPLv3+
 URL:		https://www.gnu.org/software/ssw/
 Source0:	https://alpha.gnu.org/gnu/ssw/%{name}-%{version}.tar.gz
@@ -33,6 +33,8 @@ drag and drop and row/column labelling are also included.
 %package -n %{libname}
 Summary:	A library for Gtk+ which provides a spread sheet widget
 Group:		System/Libraries
+# Intentionally unversioned, because libname should not contain version number
+Obsoletes:	%{oldlibname}
 
 %description -n %{libname}
 GNU Spread Sheet Widget is a library for Gtk+ which provides a widget for
@@ -52,9 +54,9 @@ drag and drop and row/column labelling are also included.
 #----------------------------------------------------------------------------
 
 %package -n %{develname}
-Summary: The development files for %{name}
-Requires: %{libname}%{?_isa} = %{version}-%{release}
-
+Summary:	The development files for %{name}
+Group:		Development/C
+Requires:	%{libname} = %{version}-%{release}
 
 %description -n %{develname}
 Additional header files for development with %{name}.
