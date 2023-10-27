@@ -4,7 +4,7 @@
 
 Summary:	A library for Gtk+ which provides a spread sheet widget
 Name:		spread-sheet-widget
-Version:	0.8
+Version:	0.10
 Release:	1
 License:	GPLv3+
 URL:		https://www.gnu.org/software/ssw/
