@@ -13,6 +13,7 @@ Source1:	https://alpha.gnu.org/gnu/ssw/%{name}-%{version}.tar.gz.sig
 Patch1:		spread-sheet-widget-0001-No-need-to-specify-gtk3-lib-in-pc-file.patch
 Patch2:		spread-sheet-widget-0002-Use-more-standard-macros-in-pc-file.patch
 
+BuildRequires:	texinfo
 BuildRequires:	pkgconfig(glib-2.0) >= 2.44
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.18.0
 
